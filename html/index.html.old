@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Silenter Security</title>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:600px;
+    width:200px;
+    float:left;
+    padding:25px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+
+	<!--<div id="header">
+	<h1>Silenter 入侵防御系统</h1>
+	</div>-->
+
+	<!--<div id="nav">
+	<a href="/system_configuration.html">系统配置</a><br>
+	<a href="/intrusion_prevention.html">入侵防御</a><br>
+	<a href="/report_log.html">报表日志</a><br>
+	<a href="/traffic_statistics.html">流量统计</a><br>
+	</div>-->
+
+
+
+	<!--<div id="footer">
+	Copyright by Silenter.
+	</div>-->
+
+</body>
+	<frameset cols="120,*">
+	<frame id="nav" src="/leftmenu.html">
+	<frame src="system_configuration.html" name="showframe">
+	</frameset>
+	
+</html>
+
