@@ -1,9 +1,36 @@
-<html>
-	<body>
-		<a href="/system_configuration.html" target="showframe">系统配置</a><br>
-        	<a href="/intrusion_prevention.html" target="showframe">入侵防御</a><br>
-       		<a href="/report_log.html" target="showframe">报表日志</a><br>
-        	<a href="/traffic_statistics.html" target="showframe">流量统计</a><br>
+<!DOCTYPE HTML>	
 
-	</body>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+	//点击展开关闭效果.
+	function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){  
+	var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;  
+	var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;  
+	var openTip = oOpenTip || "";  
+	var shutTip = oShutTip || "";  
+	if(targetObj.style.display!="none"){  
+			if(shutAble) return;  
+			targetObj.style.display="none";  
+			if(openTip  &&  shutTip){  
+		    		sourceObj.innerHTML = shutTip;   
+			}  
+		} else {  
+			targetObj.style.display="block";  
+			if(openTip  &&  shutTip){  
+				sourceObj.innerHTML = openTip;   
+			}  
+		}  
+	}  
+	</script>
+	<body>
+		<p><a href="###" onclick="openShutManager(this,'box')">IPS功能</a></p>
+		<p id="box" style="display:none">
+			<a href="/system_configuration.html" target="showframe">系统配置</a><br>
+        		<a href="/intrusion_prevention.html" target="showframe">入侵防御</a><br>
+       			<a href="/report_log.html" target="showframe">报表日志</a><br>
+        		<a href="/traffic_statistics.html" target="showframe">流量统计</a><br>
+		</p>
+
+		</body>
 </html>
