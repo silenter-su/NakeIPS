@@ -37,6 +37,9 @@ This is a basic IPS(Intrusion Prevention System) project, but it's complete.
 * a.应用层协议解析
 * b.netmap和E1000E.构建高速检测模式.
 
+## 6.工作环境的搭建和一些基础知识.
+* a.介绍我的工作环境.
+* b.工作日志.
 ## 其它后续补充.
 
 
